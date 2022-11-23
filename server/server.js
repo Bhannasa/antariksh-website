@@ -17,6 +17,7 @@ app.use(router)
 app.use("*", BAD_GATEWAY)
 
 connectToDb();
+app.use("/file",upload);
 
 app.listen(PORT , () => {
     console.log(`Server is running at port ${PORT}`);
